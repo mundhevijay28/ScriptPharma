@@ -1,0 +1,47 @@
+/* General Styles */
+.footer-section {
+    background-image: url('homebg.png'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  .footer-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 40px;
+    max-width: 800px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer-content h2 {
+    color: #007bff; /* Adjust color to match brand style */
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-content p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-content {
+      padding: 20px;
+    }
+  
+    .footer-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .footer-content p {
+      font-size: 1rem;
+    }
+  }
+  

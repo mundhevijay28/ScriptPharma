@@ -1,0 +1,207 @@
+/* General Page Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8fb;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* About Section */
+.about-section {
+  padding: 6rem 3rem;
+  background: linear-gradient(to bottom right, #4CAF50, #1a73e8);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.about-content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.highlight-text {
+  color: #ffcb05;
+  font-weight: 600;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Why Choose Us Section */
+.about-why-us ul {
+  text-align: left;
+  padding: 0;
+  list-style-position: inside;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.about-why-us li {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Team Section */
+.about-team {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.about-team p {
+  line-height: 1.7;
+  color: #f7f7f7;
+}
+
+/* Call to Action Section */
+.cta-section {
+  margin-top: 4rem;
+  background: #ffcb05;
+  padding: 3rem 1.5rem;
+  border-radius: 12px;
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: #155bb5;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.5);
+}
+
+/* Animations */
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-section {
+  animation: slideUp 1s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-option-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.email-btn {
+  background-color: #1a73e8;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.contact-option-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.contact-option-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}

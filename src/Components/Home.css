@@ -1,0 +1,169 @@
+/* Container for the whole section */
+.home-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('homebg.png'); /* Replace with your background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Gradient overlay to make the text more readable */
+.home-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(31, 64, 55, 0.8), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+  animation: overlayFadeIn 2s ease-out forwards;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Overlay animation */
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style for the company name */
+.company-name {
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 2;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  padding: 0 20px;
+  line-height: 1.2;
+  animation: slideIn 2s ease-out forwards;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Style for the tagline/description */
+.tagline {
+  font-size: 1.8rem;
+  max-width: 700px;
+  line-height: 1.6;
+  z-index: 2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  animation: fadeUp 2.5s ease-out forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Style for the button */
+.discover-button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: buttonPulse 3s infinite;
+}
+
+/* Button hover effect */
+.discover-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button pulsing animation */
+@keyframes buttonPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .discover-button {
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-name {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .discover-button {
+    padding: 10px 25px;
+  }
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
