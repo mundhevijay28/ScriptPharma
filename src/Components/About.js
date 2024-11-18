@@ -4,7 +4,7 @@ import './About.css';
 
 function About() {
   const email = 'scriptpharma02@gmail.com';
-  const whatsappNumber = '917499875082'; // Without the '+' for WhatsApp links
+  const whatsappNumber = '919405275697'; // Without the '+' for WhatsApp links
 
   return (
     <section id="about" className="about-section">

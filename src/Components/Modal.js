@@ -54,7 +54,7 @@ function Modal({ service, onClose }) {
             </button>
             <button
               className="contact-option-btn whatsapp-btn"
-              onClick={() => window.location.href = `https://wa.me/917499875082`}
+              onClick={() => window.location.href = `https://wa.me/919405275697`}
             >
               <FaWhatsapp size={20} /> Contact via WhatsApp
             </button>
